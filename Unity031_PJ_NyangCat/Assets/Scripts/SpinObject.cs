@@ -8,14 +8,16 @@ public class SpinObject : MonoBehaviour
     public GameObject targetObject;
 
     [Header("TargetSpeed")]
+    [SerializeField]
     public float fSpinSpeed;            //스핀 스피드하고 타임하고 그게 그거 아니야?
-    public float fSpinTime;             //아... 그냥 두개 상호보완시키자...
     [SerializeField]
-    private float fOriginSpinSpeed;     //원본 속도     
-    [SerializeField]
+    public float fSpinTime;             //아... 그냥 두개 상호보완시키자...    
+    private float fOriginSpinSpeed;     //원본 속도         
     private float fOriginSpinTime;      //원본 시간 
     [SerializeField]
     private float fNowSpinDegree;
+    public float FSpinTime { get { return FSpinTime; } set { FSpinTime = value; } }
+    public float FSpinSpeed { get { return fSpinSpeed; } set { fSpinSpeed = value; } }
 
 
     public enum eSwitchSpin { left, right };
