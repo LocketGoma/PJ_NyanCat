@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class OnelineGameTileObject : MonoBehaviour
 {
     [SerializeField]
-    private OnelineGame onelineGameManager;
+    public OnelineGame onelineGameManager;
     public Sprite tileSprite;
+    public int indexX;
+    public int indexY;
 
     // Start is called before the first frame update
     void Start()
